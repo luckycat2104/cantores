@@ -1,0 +1,30 @@
+#PARA UTILIZAR ESSES ENDPOINTS É NECESSÁRIO INSTALAR A EXTENSÃO DO VSCODE "REST CLIENT"
+###
+
+GET http://localhost:3333/cantores
+
+###
+
+POST http://localhost:3333/cantores
+Content-Type: application/json
+
+{
+    "nome_cantor": "Alguem",
+    "nome_banda": "cocksuckers",
+    "data_nascimento": "1962-03-28"
+}
+
+###
+
+PUT http://localhost:3333/cantores/id
+Content-Type: application/json
+
+{
+    "nome_cantor": "Fulano",
+    "nome_banda": "sla um nome aí",
+    "data_nascimento": "1975-04-29"
+}
+
+###
+
+DELETE http://localhost:3333/cantores/id
